@@ -1,0 +1,503 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+.body1{
+    height: 100%;
+
+}
+.navbar{
+    
+    padding: 20px 5%;
+    background-color: rgb(82, 175, 82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 950;
+    box-shadow:0 5px 15px  rgb(0, 0,0,0.06); ;
+
+
+
+}
+.navbar .logo img{
+    color :white;
+    font-size: 30px;
+    cursor: pointer;
+
+    
+    
+
+}
+  
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+
+    
+}
+.navbar .menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    border-bottom: 4px solid transparent;
+    font-weight: bold;
+
+} 
+.navbar .menu li .active{
+    border-bottom: 4px solid white;
+}
+.navbar .menu li a:hover{
+    border-bottom: 4px solid red;
+}
+
+.sous_menu{
+    display: none;
+    box-shadow: 0px 1px 2px white;
+    background-color:  rgb(82, 175, 82);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.navbar > .menu li:hover .sous_menu{
+    display: block;
+    
+}
+.sous_menu li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous_menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous_menu a:hover{
+    border-bottom: none;
+}
+.content{
+    background-image: url(images/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+
+}
+.content h1{
+    font-size: 35px;
+    color: #2d2b2b;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2d2b2b;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border:none;
+    background:  rgb(82, 175, 82);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produits_text{
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.produits_section 
+
+   {
+    padding: 10px 
+
+}
+.produits
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+}
+.produits .carte{
+    width: 280px;
+    background: rgb(246, 242, 242);
+    box-shadow: 0 10px 20px rgb(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+   
+}
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0 20px;
+
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.produits .carte .prix{
+   color:red;
+   font-size: 20px;
+   font-weight: bold;
+}
+.produits .carte .Add {
+    font-size: 13px;
+    font-weight: 900;
+    color: red;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.produits .carte .box .Add:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.banner{
+    margin: 40px 0;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/reduction.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.banner h4{
+    color:#fff;
+    font-size: 16px;
+}
+.banner h2{
+    color: #fff;;
+    font-size: 30px;
+    font-weight:bold;
+}
+.banner h2 span{
+    color: #ef3636;
+}
+.banner h1{
+    color:#fff;
+    font-weight:bold;
+
+}
+.banner1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+
+
+}
+.banner1 .banner-box{
+    margin: 40px 0;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("images/banner1.avif");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 7px;
+   
+
+}
+.banner1 .box2{
+    background-image: url(images/box.avif);
+}
+
+.banner-box h4{
+    
+       
+        font-size: 20px;
+        font-weight: bold;
+
+}
+.banner-box h2{
+   
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.banner-box span{
+
+    font-size: 15px;
+    font-weight: bold;
+}
+.pieds{
+    padding: 140px ;
+    border-top : solid 2px ;
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pieds .col{
+  
+    display:flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+.pieds h4{
+    
+    padding-bottom: 20px;
+}
+.pieds p{
+    
+    margin: 0 0 8px 0 ;
+}
+.pieds a{
+    
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #222;
+}
+.pieds .follow i:hover,
+.pieds a:hover{
+    color:  rgb(82, 175, 82);
+}
+.pieds .copyright{
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+/* ----------------page produit------------*/
+
+.page-produit{
+    background-image: url("images/produitfond.avif");
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.page-produit h2,
+.page-produit p{
+    color: #fff;
+    font-size: 40px;
+
+
+}
+.page-produit p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ----------------page apropos------------*/
+.page-about{
+    background-image: url("images/about.avif");
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+.page-about h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+.about-section {
+    display: block
+
+}
+
+    
+
+.about-section div{
+    padding-left: 40px;
+    padding-top: 100px;
+}
+.about-section marquee{
+    background-color: rgb(82, 175, 82);
+    font-size: 30px;
+    color: #fff;
+}
+.about-pub{
+    text-align: center;
+}
+.about-pub .video{
+    width: 70%;
+    height:100%;
+    margin:30px auto 0 auto;
+}
+.about-pub .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/*------------page contact---------*/
+
+.content1 {
+    background-image: url("images/contactez-nous.jpg");
+    width: 100%;
+    height: 50vh;
+    
+    
+
+   
+    }
+.message
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.message marquee{
+    background-color:rgb(82, 175, 82); 
+    color: #fff;
+}
+.message a{
+    text-decoration: none;
+    color: rgb(82, 175, 82);
+    
+    
+}
+.message a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------page panier------------*/
+.panier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.panier img {
+    width: 40px;
+    padding: 8px 0;
+}
+.panier section {
+    width: 70%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+   
+}
+ 
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+th {
+    padding: 10px 0;
+    font-weight: 400;
+}
+td {
+    border-top: 0.5px solid #999;
+    text-align: center;
+    color: #37a6ff;
+}
+tr {
+    border-bottom: 0.5px solid #999;
+}
+
+.total th {
+    border: 0;
+    float: left;
+    font-weight: 500;
+    color: black;
+    padding: 10px;
+}
+
+
+
+/* ----------------page inscription------------*/
+
+
+.inscription {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 6px;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+.inscription h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form  input {
+    margin: 5px 0;
+    padding: 5px 5px;
+    outline: 0;
+    border: 1px solid#000;
+    border-radius: 6px;
+
+}
+form  input[type='submit'] {
+    background-color: rgb(82, 175, 82);
+    border: 0;
+    color: #fff;
+    margin-top: 15px;
+    padding: 6px 0;
+}
+
